@@ -1,0 +1,6 @@
+dont forget to add active class on the links in the offcanvas
+<li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">
+                      Buy
+                    </a>
+</li>
