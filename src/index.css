@@ -1,15 +1,90 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-  background-color: rgb(0, 109, 128);
+	background-color: rgb(0, 109, 128);
+	background-image: linear-gradient(to left, rgb(69, 92, 220), #445);
+	color: #aaa;
 }
 
-.main_heading {
-  text-align: center;
-
+.center {
+	text-align: center;
 }
 
+.carousel_container {
+	width: 100%;
+	/* overflow-y: hidden; */
+	height: fit-content;
+	z-index: 0;
+	margin: 0 auto;
+	position: relative;
+}
+
+.full-width {
+	width: 40%;
+}
+
+.head_nav {
+	padding: 10px;
+}
+
+header {
+	position: sticky;
+	top: 0;
+	margin-bottom: 0px;
+}
+
+.img_description {
+	font-size: 2rem;
+	font-weight: bold;
+	font-family: "Fira Code", Verdana, Geneva, Tahoma, sans-serif;
+	z-index: 2;
+	display: block;
+
+	text-decoration: none;
+	color: rgb(58, 116, 253);
+
+	position: absolute;
+	right: 15px;
+	bottom: 10px;
+	letter-spacing: 5px;
+}
+
+.nav_brand {
+	font-weight: 900;
+}
+
+.laptop1 {
+	background-image: url("./assets/img/laptop1.jpg");
+}
+.laptop2 {
+	background-image: url("./assets/img/laptop2.jpg");
+}
+.laptop3 {
+	background-image: url("./assets/img/laptop3.jpg");
+}
+
+.laptop {
+	height: 50vh;
+
+	background-repeat: round;
+	background-size: cover;
+}
+
+.carousel_container {
+	background-color: cyan;
+	display: block;
+	margin: 0 auto;
+}
+
+.about_section {
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.about__h2 {
+	font-size: 2rem;
+}

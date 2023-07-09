@@ -1,62 +1,51 @@
 import React from "react";
 
+import About from "./About";
+
 const Content = () => {
-  const imagesPath = [
-    "./assets/computers/laptop1.jpeg",
-    "./assets/computers/laptop2.jpeg",
-    "./assets/computers/laptop3.jpeg",
-    "./assets/computers/laptop4.jpeg",
-    "./assets/computers/laptop5.jpeg",
-    "./assets/computers/laptop6.jpeg",
-  ];
-  return (
-    <main>
-      <div
-        id="carouselExampleInterval"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          {imagesPath.map((path) => (
-            <div
-              class="carousel-item active carousel carousel-fade"
-              data-bs-interval="2000"
-              title="AY Laptops"
-            >
-              <img src={path} alt="Laptops" />
-            </div>
-          ))}
-          {/* <div class="carousel-item active" data-bs-interval="10000">
-            <img src="..." class="d-block w-100" alt="..." />
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="..." class="d-block w-100" alt="..." />
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="..." />
-          </div> */}
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleInterval"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleInterval"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </main>
-  );
+	return (
+		<main>
+			<section class="carousel_section">
+				<div
+					id="carouselExampleInterval"
+					class="carousel slide  center carousel_container z-n1"
+					data-bs-ride="carousel"
+				>
+					<div class="carousel-inner carousel_inner">
+						<div class="carousel-item active laptop1 laptop" data-bs-interval="5000">
+							<figure>
+								{/* <img src={laptop1} class="d-inline-block w-90 full-width  " alt="AY Computers" /> */}
+								<figcaption class="carousel_figcaption">
+									<cite class="img_description">Buy</cite>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="carousel-item active laptop3 laptop" data-bs-interval="5000">
+							<figure>
+								{/* <img src={laptop3} class="d-inline-block w-90 full-width  " alt="AY Computers" /> */}
+								<figcaption class="carousel_figcaption">
+									<cite class="img_description">Sell</cite>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="carousel-item active laptop2 laptop" data-bs-interval="5000">
+							<figure>
+								{/* <img src={laptop2} class="d-inline-block w-90 full-width  " alt="AY Computers" /> */}
+								<figcaption class="carousel_figcaption">
+									<cite class="img_description">Fix</cite>
+								</figcaption>
+							</figure>
+						</div>
+					</div>
+				</div>
+			</section>
+			<br />
+			<br />
+			<section>
+				<About />
+			</section>
+		</main>
+	);
 };
 
 export default Content;
