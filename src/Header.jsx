@@ -1,16 +1,19 @@
 import React from "react";
-
+import { NavLink, useLocation } from "react-router-dom";
 const Header = () => {
+	const location = useLocation();
+	console.log(location.pathname);
+
 	return (
 		<>
 			<header>
-				<nav class="navbar navbar-expand-lg bg-body-tertiary head_nav" data-bs-theme="dark">
-					<div class="container-fluid p-100">
-						<a class="navbar-brand nav_brand" href="#">
+				<nav className="navbar navbar-expand-lg bg-body-tertiary head_nav" data-bs-theme="dark">
+					<div className="container-fluid p-100 ">
+						<a className="navbar-brand nav_brand" href="/">
 							<h1>AY Computers</h1>
 						</a>
 						<button
-							class="navbar-toggler"
+							className="navbar-toggler"
 							type="button"
 							data-bs-toggle="collapse"
 							data-bs-target="#navbarNavDropdown"
@@ -18,28 +21,33 @@ const Header = () => {
 							aria-expanded="false"
 							aria-label="Toggle navigation"
 						>
-							<span class="navbar-toggler-icon"></span>
+							<span className="navbar-toggler-icon"></span>
 						</button>
-						<div class="collapse navbar-collapse" id="navbarNavDropdown">
-							<ul class="navbar-nav">
-								<li class="nav-item">
-									<a class="nav-link" aria-current="page" href="#">
+						<div className="collapse navbar-collapse" id="navbarNavDropdown">
+							<ul className="navbar-nav">
+								<li className="nav-item">
+									<a className="nav-link" aria-current="page" href="/">
+										<h5>Home</h5>
+									</a>
+								</li>
+								<li className="nav-item">
+									<a className="nav-link" aria-current="page" href="/buy">
 										<h5>Buy</h5>
 									</a>
 								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#">
+								<li className="nav-item">
+									<a className="nav-link" href="/sell">
 										<h5>Sell</h5>
 									</a>
 								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#">
+								<li className="nav-item">
+									<a className="nav-link" href="/fix">
 										<h5>Fix</h5>
 									</a>
 								</li>
-								<li class="nav-item dropdown">
+								<li className="nav-item dropdown">
 									<a
-										class="nav-link dropdown-toggle"
+										className="nav-link dropdown-toggle"
 										href="#"
 										role="button"
 										data-bs-toggle="dropdown"
@@ -47,19 +55,15 @@ const Header = () => {
 									>
 										More
 									</a>
-									<ul class="dropdown-menu">
+									<ul className="dropdown-menu">
 										<li>
-											<a class="dropdown-item" href="#">
+											<a className="dropdown-item" href="/contact_us">
 												Contact Us
 											</a>
 										</li>
+
 										<li>
-											<a class="dropdown-item" href="#">
-												Customer Care
-											</a>
-										</li>
-										<li>
-											<a class="dropdown-item" href="#">
+											<a className="dropdown-item" href="/faq">
 												FAQ
 											</a>
 										</li>

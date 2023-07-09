@@ -3,39 +3,37 @@ import React from "react";
 const Footer = () => {
 	return (
 		<>
-			<div class="container">
-				<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-					<p class="col-md-4 mb-0 text-body-secondary">© AY Computers</p>
-
-					<ul class="nav col-md-4 justify-content-end">
-						<li class="nav-item">
-							<a href="#" class="nav-link px-2 text-body-secondary">
-								Home
-							</a>
+			<hr className="footer__hr" />
+			<footer className="footer">
+				<div className="footer__divider">
+					<ul className="footer__ul">
+						<li>
+							<a href="/buy">Buy</a>
 						</li>
-						<li class="nav-item">
-							<a href="#" class="nav-link px-2 text-body-secondary">
-								Features
-							</a>
+						<li>
+							<a href="/fix">Fix</a>
 						</li>
-						<li class="nav-item">
-							<a href="#" class="nav-link px-2 text-body-secondary">
-								Pricing
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="#" class="nav-link px-2 text-body-secondary">
-								FAQs
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="#" class="nav-link px-2 text-body-secondary">
-								About
-							</a>
+						<li>
+							<a href="/sell">Sell</a>
 						</li>
 					</ul>
-				</footer>
-			</div>
+					<ul className="footer__ul">
+						<h4>Contact Us</h4>
+						<ul>
+							<li>
+								<a href="mailto:divinejohn1976@gmail.com">Gmail</a>
+							</li>
+							<li>
+								<a href="tel:+2348163057793">Telephone</a>
+							</li>
+						</ul>
+					</ul>
+				</div>
+
+				<p className="footer__p">
+					&#10031; &#169; {new Date().getFullYear()} Divine Developer &#10031;
+				</p>
+			</footer>
 		</>
 	);
 };
